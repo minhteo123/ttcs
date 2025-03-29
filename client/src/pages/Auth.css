@@ -1,0 +1,164 @@
+.auth-container {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.auth-content {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  min-height: 600px;
+}
+
+.auth-form-container {
+  flex: 1;
+  background-color: white;
+  padding: 20px 0;
+}
+
+.auth-tabs {
+  display: flex;
+  border-bottom: 1px solid #eee;
+}
+
+.auth-tab {
+  flex: 1;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.auth-tab.active {
+  color: #7c3aed;
+  border-bottom: 2px solid #7c3aed;
+}
+
+.auth-form-content {
+  padding: 30px;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.auth-form-content h2 {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  color: #1f2937;
+}
+
+.auth-subtitle {
+  color: #6b7280;
+  margin-bottom: 25px;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.checkbox-group input {
+  margin-top: 3px;
+}
+
+.checkbox-group label {
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.checkbox-group a {
+  color: #7c3aed;
+  text-decoration: none;
+}
+
+.social-auth {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.social-auth p {
+  position: relative;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.social-auth p:before, 
+.social-auth p:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 25%;
+  height: 1px;
+  background-color: #e5e7eb;
+}
+
+.social-auth p:before {
+  left: 0;
+}
+
+.social-auth p:after {
+  right: 0;
+}
+
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #d1d5db;
+  background-color: white;
+  color: #374151;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.social-btn:hover {
+  background-color: #f9fafb;
+}
+
+.auth-image {
+  flex: 1;
+  background: linear-gradient(135deg, #a855f7 0%, #7c3aed 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.auth-image-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.auth-image-content p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .auth-content {
+    flex-direction: column;
+  }
+  
+  .auth-image {
+    display: none;
+  }
+} 

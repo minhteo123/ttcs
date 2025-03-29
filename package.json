@@ -1,0 +1,27 @@
+{
+  "name": "gift-discovery-app",
+  "version": "1.0.0",
+  "description": "Gift Discovery Application with server and client",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "server": "nodemon server/index.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "seed": "node server/seedDB.js",
+    "install-all": "npm install && npm install --prefix server && npm install --prefix client"
+  },
+  "keywords": [
+    "gift",
+    "discovery",
+    "mern",
+    "react",
+    "node"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^7.6.0",
+    "nodemon": "^2.0.21"
+  }
+} 
